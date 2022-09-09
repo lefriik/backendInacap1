@@ -1,0 +1,40 @@
+{% extends '../layouts/base.html' %}
+
+{% load static %}
+
+{% block title %}
+Espresso
+{% endblock  %}
+
+
+{% block content %}
+
+<h1 class="text-secondary"> {{title}} </h1>
+
+<section class="container-xl">
+    
+
+    <div class="row mt-5 gx-5">
+        <main class="col order-1 order-md-0">
+            <article class="mb-2 pb-5">
+               
+                <img class="img-fluid " src="{% static '/images/header_killer.webp' %}" alt="imagen blog">
+
+                <div class="d-flex flex-column flex-md-row justify-content-md-between py-4">
+                    <p class="fw-bold text-secondary">Fecha: 
+                        <span class="text-white">15 de Septiembre de 2022</span> 
+                    </p>
+                    <p class="fw-bold text-secondary">Escrito por: 
+                        <span class=" text-white">Emerio Suarez</span> 
+                    </p>
+                </div>
+
+                <p class="text-white">El concepto original de un espresso era algo que tenía que ser preparado de forma rápida; traducido literalmente, “espresso” significa rápido. Luigi Bezzara, un inventor milanés, registró una patente para una máquina, con dos grupos con portafiltros donde el café comprimido podía ser sujetado. Esta fue la primera vez en que se preparaba un café de forma rápida al cliente...</p>
+
+                
+            </article>
+        </main>
+    </div>
+</section>
+
+{% endblock %}

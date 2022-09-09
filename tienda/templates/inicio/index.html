@@ -1,0 +1,41 @@
+{% extends '../layouts/base.html' %}
+
+{% load static %}
+
+{% block title %}
+Inicio
+{% endblock  %}
+
+
+
+
+{% block content %}
+
+
+
+
+
+
+<h1 class="text-secondary"> {{title}} </h1>
+
+<div class="row">
+    <div class="col-md-6 mt-3">
+        <img src="{% static '/images/header_proceso.webp' %} " class="card-img-top" alt="...">
+    </div>
+    <div class="col-md-6 mt-3">
+        <p class="text-white">
+            La palabra "café" proviene del término turco kahve, a su vez, procedente del árabe, qahwa, a través del italiano.​ El término árabe sería una abreviación de la expresión qahhwat al-bun o planta de café. Un posible origen de la palabra se encontraría en el Reino de Kaffa en Etiopía, de donde procedería la planta del café; su nombre allí es bunn o bunna.
+        </p>
+        <p class="text-white">
+            La historia del café se remonta al siglo XIII, aunque el origen del café sigue sin esclarecerse. 
+        </p>
+      
+        
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}

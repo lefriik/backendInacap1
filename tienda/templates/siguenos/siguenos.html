@@ -1,0 +1,38 @@
+{% extends '../layouts/base.html' %}
+
+{% block title %}
+Siguenos
+{% endblock  %}
+
+
+{% block content %}
+
+<h1 class="text-secondary"> {{title}} </h1>
+
+<!-- Facebook -->
+<a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
+  ><i class="fab fa-facebook-f"></i></a
+>
+<!-- Instagram -->
+<button
+  type="button"
+  class="btn btn-primary position-relative"
+  data-mdb-ripple-unbound="true"
+  style="background-color: #ac2bac;"
+>
+  <i class="fab fa-instagram"></i>
+  
+</button>
+
+<!-- Twitter -->
+<button
+  type="button"
+  class="btn btn-primary position-relative"
+  data-mdb-ripple-unbound="true"
+  style="background-color: #55acee;"
+>
+  Twitter <i class="fab fa-twitter ms-1"></i>
+  
+</button>
+
+{% endblock %}

@@ -16,14 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from tienda.views import index, pedido, blog
+from tienda.views import index, productos, blog, contacto, siguenos, espresso, mocaccino
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
     path('index/', index, name="inicio" ),
-    path('pedido/', pedido, name="pedido" ),
+    path('productos/', productos, name="productos" ),
     path('blog/', blog, name="blog" ),
+    path('contacto/', contacto, name="contacto" ),
+    path('siguenos/', siguenos, name="siguenos" ),
+    path('espresso/', espresso, name="espresso" ),
+    path('mocaccino/', mocaccino, name="mocaccino" ),
 ]
 
 
