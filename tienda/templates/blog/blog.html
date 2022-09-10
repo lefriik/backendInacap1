@@ -11,14 +11,17 @@ Blog
 
 <h1 class="text-secondary"> {{title}} </h1>
 
-<section class="container-xl">
+
+
+<div class="container-xl">
     
 
     <div class="row mt-5 gx-5">
-        <main class="col order-1 order-md-0">
+        <div class="col order-1 order-md-0">
             <article class="mb-2 pb-5">
-                <h2 class="text-white">La historia de tu Cafe</h2>
-                <img class="img-fluid mt-3" src="{% static '/images/header_late.webp' %}" alt="imagen blog">
+                <h4 class="text-white text-uppercase"> Espresso </h4>
+               
+                <img class="img-fluid " src="{% static '/images/header_killer.webp' %}" alt="imagen blog">
 
                 <div class="d-flex flex-column flex-md-row justify-content-md-between py-4">
                     <p class="fw-bold text-secondary">Fecha: 
@@ -31,12 +34,37 @@ Blog
 
                 <p class="text-white">El concepto original de un espresso era algo que tenía que ser preparado de forma rápida; traducido literalmente, “espresso” significa rápido. Luigi Bezzara, un inventor milanés, registró una patente para una máquina, con dos grupos con portafiltros donde el café comprimido podía ser sujetado. Esta fue la primera vez en que se preparaba un café de forma rápida al cliente...</p>
 
-
-                <a href="{% url 'espresso' %}" class="btn btn-primary px-5 fs-5 text-uppercase fw-bold rounded d-block d-md-inline-block">Continuar Leyendo</a>
                 
             </article>
-        </main>
+        </div>
     </div>
-</section>
+</div>
+
+<div class="container-xl">
+
+    <div class="row mt-5 gx-5">
+        <div class="col order-1 order-md-0">
+            <article class="mb-2 pb-5">
+
+                <h4 class="text-white text-uppercase"> Mocaccino </h4>
+               
+                <img class="img-fluid " src="{% static '/images/cafe6.webp' %}" alt="imagen blog">
+
+                <div class="d-flex flex-column flex-md-row justify-content-md-between py-4">
+                    <p class="fw-bold text-secondary">Fecha: 
+                        <span class="text-white">15 de Septiembre de 2022</span> 
+                    </p>
+                    <p class="fw-bold text-secondary">Escrito por: 
+                        <span class=" text-white">Emerio Suarez</span> 
+                    </p>
+                </div>
+
+                <p class="text-white">El café moca toma su nombre de la ciudad costera del mar Rojo de Moca, que ya en el siglo XV era una importante exportadora de café procedente en gran medida de Abisinia (región de Kaffa), especialmente a regiones de la península arábiga. Se llama también moca a un tipo de grano de café procedente de esta ciudad y que recuerda al cacao, de donde puede venir la asociación con el chocolate y el desarrollo de la bebida de expreso y chocolate. En algunos lugares de Europa el «café moca» puede ser esta bebida o simplemente el café elaborado con granos moca. ....</p>
+
+                
+            </article>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

@@ -19,6 +19,9 @@
 }
 
 
+.text-primary{
+    color: var(--bs-primary)!important;
+}
 .text-secondary{
     color: var(--bs-secondary)!important;
 }
@@ -61,11 +64,20 @@
 }
 
 .nav-item a{
+    padding: .1rem;
     border-radius: .5rem;
+    
 }
 
+.nav-item a.active{
+    background-color: var(--bs-secondary)!important;
+    color: black!important;
+    
+}
+
+
 .nav-item a:hover {
-    background-color: var(--bs-secondary) !important;
+    background-color: var(--bs-secondary)!important;
     color: black!important;
     
 }
